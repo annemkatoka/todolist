@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lista de Tareas</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script type="text/javascript" src="script.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <form onsubmit="agregarTarea(event)">
+        <input
+          type="text"
+          id="tarea"
+          placeholder="Agregar nombre de la tarea"
+        />
+        <input type="submit" value="Agregar" id="agregar_tarea" />
+        <input type="button" value="Limpiar" onclick="limpiar()" />
+      </form>
+      <ul id="contenedor"></ul>
+    </main>
+  </body>
+</html>
